@@ -213,15 +213,45 @@ p:last-child{
     margin-top: 5px;
 }
 
+.contact-list::after{
+    content: "";
+    background: rgb(215, 215, 215);
+    height: 1px;
+    width: 360%;
+    position: relative;
+    transform: translateX(-10%);
+    right: -50%;
+    bottom: -50px;
+}
+
 .contact-medias{
     display: grid;
     align-items: center;
     grid-template-columns: 25% 75%;
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto 15px;
+}
 
+.medias-logos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 footer{
     background: #000;
+    color: var(--font2);
+}
+
+footer > h3{
+    text-align: center;
+    margin: 0;
+    padding: 25px 0;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+footer > ul{
+    margin: 0;
+    padding: 0 20px 30px 20px;
 }
