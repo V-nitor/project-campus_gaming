@@ -72,13 +72,6 @@ header{
     padding-top:  85px;
 }
 
-.header-text{
-    font-weight: bold;
-    margin: 50px auto;
-    text-align: center;
-    width: 80%;
-}
-
 button{
     margin-top: 5px;
     background: transparent;
@@ -87,6 +80,13 @@ button{
     font-weight: bold;
     border: solid 1px rgb( 255, 255, 255);
     padding: 15px 70px;
+}
+
+.header-text{
+    font-weight: bold;
+    margin: 50px auto;
+    text-align: center;
+    width: 80%;
 }
 
 .icon-part{
@@ -291,4 +291,42 @@ footer > ul{
 
 footer > ul > li > img{
     width: 90%;
+}
+
+@media screen and (max-width: 790px) {
+
+    nav{
+        display: none;
+    }
+
+    header{
+        margin-top: 0;
+        height: 510px;
+        background: url(./assets/img/bg.jpg) fixed top/100% 80%;
+    }
+
+    .main-header{
+        padding-top:  75px;
+    }
+
+    #logo > img{
+        width: 62.5%;
+    }
+
+    h1{
+        width: 65%;
+        font-size: 30px;
+    }
+
+    button{        
+        margin-top: 25px;
+        letter-spacing: 2.5px;
+    }
+    
+    .header-text{
+        margin: 30px auto;
+        width: 95%;
+        font-size: 25px;
+    }
+    
 }
