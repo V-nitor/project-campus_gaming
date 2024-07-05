@@ -302,7 +302,7 @@ footer > ul > li > img{
     header{
         margin-top: 0;
         height: 510px;
-        background: url(./assets/img/bg.jpg) fixed top/100% 80%;
+        background: url(./assets/img/bg.jpg) fixed top/100% 510px;
     }
 
     .main-header{
@@ -320,13 +320,38 @@ footer > ul > li > img{
 
     button{        
         margin-top: 25px;
-        letter-spacing: 2.5px;
+        letter-spacing: 0.35vw;
     }
     
     .header-text{
         margin: 30px auto;
         width: 95%;
         font-size: 25px;
+    }
+
+    .icon-part-container{
+        flex-direction: column;
+        margin: 0;
+        padding: 90px 0;
+    }
+
+    .list-icon-part{
+        margin: 45px 0 0;
+        width: 70%;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    .list-icon-part > p{
+        height: 75px;
+        margin: 0;
+    }
+
+    .list-icon-part > button{
+        padding: 15px 50px;
+        margin-top: 10px;
     }
     
 }
