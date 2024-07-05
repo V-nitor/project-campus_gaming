@@ -13,6 +13,11 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: rgb(100, 0, 190);
+}
+
 body{    
     background: rgb(215, 215, 215);
     font-family: "Montserrat", sans-serif;
@@ -142,14 +147,79 @@ button{
 }
 
 .link > a{
-    color:rgb(100, 0, 190);
     text-transform: uppercase;
-    text-decoration: none;
     letter-spacing: 1px;
 }
 
 .contact{
     background: rgb( 255, 255, 255);
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.contact-list{
+    display:grid;
+    align-items: center;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 90%;
+    margin: 70px auto;
+}
+
+.list{
+    height: 210px;
+}
+
+.list:last-child{
+    margin-left: 50px;
+}
+
+h5{
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.infos-p{
+    display: block;
+    margin: 0;
+}
+
+.infos-p > li{
+    margin-bottom: 10px;
+}
+
+h6{
+    margin: 0 0 10px;
+}
+
+.network{
+    margin: 30px 0 10px;
+}
+
+.footer-logos{
+    letter-spacing: 5px;
+}
+
+.copyright{
+    margin-bottom: 0;
+}
+
+p:last-child{
+    margin-top: 5px;
+}
+
+.contact-medias{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 25% 75%;
+    width: 90%;
+    margin: 0 auto;
+
 }
 
 footer{
