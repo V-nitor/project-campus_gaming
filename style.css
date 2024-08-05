@@ -57,7 +57,7 @@ nav > ul{
     padding: 0 5px;
 }
 
-/* WARNING= To put ">" sometime it is COMPLETELY USELESS!! At the bottom */
+/* WARNING= To put ">" sometime it is COMPLETELY USELESS!! Because ">" mean "DIRECT-Child" otherwise "without (>)" it mean "ALL-Child" which possessed at the bottom */
 nav li{
     text-transform: uppercase;
     font-weight: 700;
@@ -210,4 +210,54 @@ h1{
 .right-part > button:hover{
     color: whitesmoke;
     background: rgba(0, 0, 0, 0.9);
+}
+
+.main-news-container{
+    /* Tip VERY useful= If spaces between colum are not equal because some take more space than others in "flex" . Well, the "grid" is more useful at the bottom */
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    max-width: 1000px;
+    margin: 45px auto;
+    gap: 12.5%;
+}
+
+.main-news-container > div{
+    position: relative;
+}
+
+.mn-pic img{
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px #888;
+}
+
+.main-news-container  h4,
+.main-news-container  p{
+    text-align: left;
+}
+
+.main-news-container  h4{
+    margin: 15px 0;
+}
+
+.main-news-container  p{
+    font-size: 0.8rem;
+    line-height: 20px;
+    margin-bottom: 45px;
+}
+
+.main-news-container .link{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.main-news a{
+    text-transform: uppercase;
+    color: var(--selected_nav);
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+    font-weight: 900;
 }
