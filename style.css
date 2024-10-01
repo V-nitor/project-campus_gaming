@@ -395,4 +395,80 @@ footer ul{
     nav li{
         font-size: 0.7em;
     }
+
+    .main-header img{
+        width: 60%;
+    }
+
+    .contact-list .list{
+        padding-left: 15px;
+    }
+
+    .medias-logos img{
+        width: 40px;
+    }
+
+    footer ul{
+        /* Remember, flex-wrap mean: Is flex need to be back to the lign if not enough space? */
+        flex-wrap: wrap;
+    }
+
+    footer li{
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 870px){
+    nav li{
+        display: none;
+    }
+
+    .icon-part-container{
+        display: block;
+    }
+
+    .icon-part{
+        padding: 0 0 30px;
+    }
+
+    .list-icon-part{
+        margin-top: 40px;
+    }
+    
+    .header-news{
+        display: block;
+    }
+
+    .left-part{
+        width: 100%;
+    }
+
+    .left-part h2,
+    .left-part p{
+        text-align: center;
+    }
+    
+    .left-part p{
+        margin-bottom: 10px;
+    }
+
+    .main-news-container{
+        display: block;
+    }
+
+    .main-news-container div{
+        max-width: 90%;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        margin-top: 58px;
+    }
+
+    .main-news-container img{
+        display: inline;
+        width: 50%;
+    }
+
+    .contact{
+        display: none;
+    }
 }
